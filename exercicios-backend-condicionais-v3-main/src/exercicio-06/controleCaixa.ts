@@ -3,5 +3,13 @@ export default function solucao(
   quantidadeCaixa: number,
   precoPassagem: number
 ): string {
-  // seu código aqui
+  const calculototal = marcacaoRoleta * precoPassagem
+  
+  if (quantidadeCaixa === calculototal) {
+      return 'TUDO CERTO'
+    } else if(quantidadeCaixa > calculototal) {
+      return 'DINHEIRO SOBRANDO'
+    } else {
+    return 'DINHEIRO FALTANDO'
+  }
 }
