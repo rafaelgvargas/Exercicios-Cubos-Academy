@@ -1,5 +1,6 @@
 function solucao(rank: string[]): string {
-  // seu código aqui
+  const piorLutador = rank[rank.length -1]
+  return piorLutador
 }
 
 export default solucao;
