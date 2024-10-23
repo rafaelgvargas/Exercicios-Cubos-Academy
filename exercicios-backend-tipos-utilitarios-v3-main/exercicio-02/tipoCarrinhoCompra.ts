@@ -19,3 +19,17 @@ type Carrinho = {
     tipoTransacao: 'credito' | 'Debito',
     cartao: Cartao
 }
+
+
+type Endereco = {
+    CEP: string,
+    rua: string,
+    bairro: string,
+    cidade: string,
+    estado: string
+}
+
+type NovoCarrinho = Omit<Carrinho, 'tipoTransacao'> & {
+    tipoTransacao: 'credito' | 'Debito',
+    endereco: Endereco
+}
