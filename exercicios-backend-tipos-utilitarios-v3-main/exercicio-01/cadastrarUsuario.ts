@@ -9,3 +9,8 @@ type Usuario = {
 const cadastrarUsuário = (info: Usuario): Usuario => {
     return info;
 }
+type SemRG = Omit<Usuario, 'rg'>;
+
+const cadastrarUsuárioSemRG = (info: SemRG): SemRG => {
+    return info;
+}
