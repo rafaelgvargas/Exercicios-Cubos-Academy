@@ -5,7 +5,12 @@ type TAnuncio = {
 };
 
 function solucao(anuncios: TAnuncio[]): TAnuncio[] | string {
-  // seu código aqui
-  
+  const ordem = anuncios.sort ((item1, item2) => {
+    return item1.preco - item2.preco
+  })
+  if (ordem.length === 0) {
+    return 'NAO ENCONTRADO'
+  }
+  return ordem
 }
 export default solucao;
