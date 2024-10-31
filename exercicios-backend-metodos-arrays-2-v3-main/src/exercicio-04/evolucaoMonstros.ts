@@ -1,4 +1,3 @@
-// IMPLEMENTE AQUI A SUA FUNÇÃO
 type TMonstro = {
   nome: string;
   forca: number;
@@ -6,6 +5,13 @@ type TMonstro = {
   experiencia: number;
 };
 function solucao(monstros: TMonstro[]): TMonstro[] {
-  // seu código aqui
+  const monstrosEvoluidos = monstros.map((monstro) => {
+    const experiencia = monstro.experiencia + 10
+    return {
+      ...monstro,
+      experiencia,
+    }
+  })
+  return monstrosEvoluidos
 }
 export default solucao;
