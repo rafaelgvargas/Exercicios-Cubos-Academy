@@ -1,4 +1,8 @@
 function solucao(cpfsCadastrados: string[], cpfDigitado: string): string {
-  // seu código aqui
+  const corresponde = cpfsCadastrados.includes(cpfDigitado);
+  if (corresponde) {
+    return "CPF JA CADASTRADO";
+  }
+  return "CADASTRO REALIZADO COM SUCESSO";
 }
 export default solucao;
