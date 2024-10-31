@@ -1,5 +1,8 @@
 function solucao(listaAlunos: string[], ordemAlfabetica: boolean): string[] {
-  // seu código aqui
-  
+  if (ordemAlfabetica) {
+    return listaAlunos.sort()
+  } else {
+    return listaAlunos
+  }
 }
 export default solucao;
