@@ -1,4 +1,3 @@
-// IMPLEMENTE AQUI A SUA FUNÇÃO
 type TPedido = {
   nomeCliente: string;
   nomePrato: string;
@@ -12,6 +11,9 @@ function solucao(
   pedidos: TPedido[],
   tipoDeAtendimento: TAtendimento
 ): TPedido[] {
-  // seu código aqui
+  if (tipoDeAtendimento === "pilha") {
+    return [pedidoSolicitado, ...pedidos]
+  }
+  return [...pedidos, pedidoSolicitado]
 }
 export default solucao;
