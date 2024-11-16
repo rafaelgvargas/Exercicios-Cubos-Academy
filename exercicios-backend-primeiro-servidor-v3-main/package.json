@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "### Instruções para abrir o projeto",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
